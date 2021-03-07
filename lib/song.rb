@@ -24,8 +24,8 @@ class Song
     @@artists.each do |artist|
       if artists_unique.include?(artist)
         artists_unique << artist
-        binding.pry
       end
+      binding.pry
     end
     artists_unique
   end
