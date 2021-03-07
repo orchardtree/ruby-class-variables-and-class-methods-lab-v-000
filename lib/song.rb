@@ -25,7 +25,7 @@ class Song
       if artists_unique.include?(artist) == false
         artists_unique << artist
       end
-      binding.pry
+      #binding.pry
     end
     artists_unique
   end
