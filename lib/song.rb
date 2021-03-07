@@ -40,7 +40,7 @@ class Song
   end
   
   def self.genre_count
-    @@genres
+    @@genres.count("rap")
   end
   
   
