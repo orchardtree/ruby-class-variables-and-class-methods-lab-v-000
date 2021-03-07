@@ -25,12 +25,17 @@ class Song
       if artists_unique.include?(artist) == false
         artists_unique << artist
       end
-      #binding.pry
     end
     artists_unique
   end
 
   def self.genres
-    @@genres
+    genres_unique = []
+    @@genres.each do |genre|
+      if genres_unique.include?(genre) == false
+        genres_unique << genre
+      end
+    end
+    genres_unique
   end
 end
